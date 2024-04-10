@@ -14,7 +14,9 @@ if __name__ == "__main__":
     greenfn = int(input("Enter an option: "))
     encoded_string = ""
     if greenfn == 1:
-        for i in len(greenfn):
+        password = str(input("password お願いいたします。"))
+        print(type(password))
+        for i in password:
             if i == "0":
                 encoded_string += "3"
             if i == "1":
@@ -33,10 +35,10 @@ if __name__ == "__main__":
                 encoded_string += "0"
             if i == "8":
                 encoded_string += "1"
-            else:
+            if i == "9":
                 encoded_string += "2"
 
-        password = str(input("password お願いいたします。"))
         print("I stored, and encoded dat bih")
+        print(encoded_string)
 
 
